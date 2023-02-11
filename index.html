@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="bg-body-tertiary navbar navbar-expand-lg bg-secondary ">
+    <nav class="bg-body-tertiary navbar navbar-expand-lg bg-secondary  ">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center " href="#">
         <i class="fa-brands fa-instagram"></i>
@@ -23,12 +23,16 @@
     <!--crear el post-->
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
 
-        <ul class="navbar-nav align-items-center">
+        <ul class="nav-tabs  navbar-nav align-items-center omi">
         <li class="nav-item active">
-          <a class="nav-link" href="#">
+          <a class="nav-link " href="#">
             <span class="btn btn-success">Create a new post<button type="button" class="btn btn-exito" data-bs-toggle="modal" data-bs-target="#exampleModal">
               </button>
               
+            </a>
+          </li>
+  
+        </ul>   
               <!-- Modal -->
               <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
@@ -42,7 +46,7 @@
                     <textarea  textname="" id="" cols="80 "  rows="3" placeholder="Add the caption of your post here" class=" text-secondary width-20px"></textarea>
                     <div class="d-flex justify-content-left"><i class="fa-solid fa-camera ml-auto iconcamera" ></i> &nbsp; &nbsp;<i class="fa-solid fa-location-dot ml-auto iconlocation"></i></div>
                   </div><div class="modal-footer" >
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
                       <button type="button" class="btn btn-success">Publish</button>
                     </div>
                     </div>
@@ -51,21 +55,18 @@
                 </div>
               </div>
             </span>
-          </a>
-        </li>
-
-        
+           
         <div class="btn-group">
   <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
     
     <i class="fa-solid fa-gear"></i>
   </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Profile</a></li>
-    <li><a class="dropdown-item" href="#">Accesibility</a></li>
-    <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-    <li><hr class="dropdown-divider"></li>
-    <li color="red"><a class="dropdown-item text-danger" href="#">Log out</a></li>
+  <ul class="nav-tabs dropdown-menu">
+    <li class="nav-item"><a class="dropdown-item nav-link" href="#">Profile</a></li>
+    <li class="nav-item"><a class="dropdown-item nav-link " href="#">Accesibility</a></li>
+    <li class="nav-item"><a class="dropdown-item nav-link" href="#">Privacy and Data</a></li>
+    <li class="nav-item"><hr class="dropdown-divider"></li>
+    <li color="red" class="nav-item"><a class="dropdown-item text-danger nav-link" href="#">Log out</a></li>
     
   </ul>
 </div>
@@ -75,13 +76,16 @@
 </nav>
 <!--Botones de inicio-->
 
-
-<li class="navbar navbar-expand-lg  nav-pills d-flex justify-content-center" id="pills-tab" role="tablist">  
-    <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><span class="navbar-toggler-icon"></span></button>
-    <button class="nav-link " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="true"> <span class="navbar-toggler-icon"></span></button>
-</li>
+<ul class="nav nav-tabs d-flex justify-content-center"" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#pills-home" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-sharp fa-regular fa-border-bottom"></i></button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link " id="profile-tab" data-bs-toggle="tab" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-sharp fa-regular fa-border-bottom"></i></button>
+  </li>
+</ul>
 <div class="tab-content container-fluid "id="pills-tabContent">
-  <div class="tab-pane fade show active container-fluid" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+  <div class="tab-pane fade show active container-fluid " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
     <div class="row p-0">
   <div class="col-sm-4 p-0">
     <figure class="figure p-1 m-0">
@@ -135,11 +139,11 @@
 </div>
 
   </div>
-</div>
 
-  <!--otro boton--><br><br>
-  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-   
+
+  <!--otro boton--><br><br><br>
+  
+  <div class="tab-pane fade container-fluid " id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
     <div class="header2">
       <div class="container2">
             <b>My Crazy dog !</b>
@@ -175,16 +179,14 @@
     <p class="text-end">06/10</p>
 </div>
 <img src="https://placebeard.it/400x400" alt="Instagram IMG">
-<div class="footer2">
+      <div class="footer2">
   <b>204 likes</b>
-    <div class="footerheader">
+          <div class="footerheader">
       This is an example of a very good photo that you can post on instagram
-        </div>
-</div>
+          </div>
+      </div>
   </div>
-
-  
-
+</div>
 <script src="https://kit.fontawesome.com/287bcbf3a3.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>

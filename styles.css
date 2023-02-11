@@ -1,5 +1,13 @@
 
-
+.omi{
+    border:  none;
+    opacity: none;
+    
+}
+.nav-tabs .nav-link {
+    font-size: smaller;
+    padding: 0.5rem 1rem;
+  }
 .iconcamera, .iconlocation{
     margin: 5px 0px;
     background-color: gainsboro;
