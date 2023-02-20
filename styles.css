@@ -14,23 +14,12 @@
     padding: 3px 5px;
 }
 
-
-
-#pills-profile{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
-
-
-
-}
 #pills-profile{
     height: 100vh;
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-left: 35%;
     margin-top: -3%;
+
 }
 .header2 {background-color: white;
     display: flex;
@@ -65,3 +54,4 @@ parrafo{
 .iconIzquierda{
     float: right;
 }
+
